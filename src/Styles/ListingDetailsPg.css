@@ -1,0 +1,58 @@
+.listing-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .listing-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .listing-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .listing-description,
+  .listing-location,
+  .listing-price {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .book-now-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff385c;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .book-now-button:hover {
+    background-color: #e0324c;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #777;
+  }
+  
