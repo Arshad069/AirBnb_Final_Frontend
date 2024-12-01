@@ -1,0 +1,70 @@
+/* SignIn.css */
+.signin-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .signin-title {
+    font-size: 2rem;
+    color: #FF385C;
+    margin-bottom: 20px;
+  }
+  
+  .signin-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .signin-button {
+    width: 100%;
+    background-color: #FF385C;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signin-button:hover {
+    background-color: #e02e4c;
+  }
+  
+  .signin-message {
+    color: #FF385C;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .signup-link {
+    display: block;
+    margin-top: 15px;
+    color: #FF385C;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .signin-form {
+      padding: 20px;
+    }
+  }
+  
