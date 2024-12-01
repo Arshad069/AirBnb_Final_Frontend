@@ -1,0 +1,68 @@
+/* BookingList.css */
+.booking-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .booking-title {
+    font-size: 2rem;
+    color: #FF385C;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .error-message, .no-bookings {
+    color: #FF385C;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .booking-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .booking-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .booking-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .booking-item-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .image-listing {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .booking-location, .booking-price, .booking-dates, .booking-total {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .booking-item {
+      width: 100%;
+    }
+  }
+  
