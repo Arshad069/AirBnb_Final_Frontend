@@ -1,58 +1,208 @@
+/* ListingDetailsPg.css */
+
 .listing-details-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.listing-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.listing-image {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.listing-description,
+.listing-location,
+.listing-price {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.details-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.listing-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.listing-meta-item {
+  text-align: center;
+  flex: 1 1 calc(33.33% - 10px);
+  min-width: 120px;
+}
+
+.listing-meta-item .icon {
+  font-size: 1.5rem;
+  color: #ff9800;
+}
+
+.host-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.host-image {
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.host-details {
+  font-size: 0.9rem;
+}
+
+.host-name {
+  font-weight: bold;
+}
+
+.host-status {
+  color: #555;
+}
+
+.listing-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  flex: 1 1 calc(50% - 10px);
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.feature .icon {
+  font-size: 2rem;
+  color: #2196f3;
+  margin-right: 15px;
+}
+
+.feature-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.about-place {
+  margin: 30px 0;
+  padding: 15px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.book-now-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-now-button:hover {
+  background-color: #218838;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .listing-meta {
+    flex-direction: column;
   }
-  
-  .listing-title {
-    font-size: 2rem;
-    font-weight: bold;
+
+  .listing-meta-item {
+    flex: 1 1 100%;
     margin-bottom: 15px;
-    color: #333;
-    text-align: center;
   }
-  
-  .listing-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
+
+  .details-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
+  .host-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listing-features {
+    flex-direction: column;
+  }
+
+  .feature {
+    flex: 1 1 100%;
+  }
+
+  .listing-title {
+    font-size: 1.8rem;
+  }
+
+  .about-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .listing-title {
+    font-size: 1.5rem;
+  }
+
   .listing-description,
   .listing-location,
   .listing-price {
-    font-size: 1.1rem;
-    margin: 10px 0;
-    color: #555;
+    font-size: 0.9rem;
   }
-  
-  .book-now-button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #ff385c;
-    color: #fff;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 20px;
-    text-align: center;
-    transition: background-color 0.3s;
-  }
-  
-  .book-now-button:hover {
-    background-color: #e0324c;
-  }
-  
-  .loading {
-    text-align: center;
+
+  .feature .icon {
     font-size: 1.5rem;
-    color: #777;
   }
-  
+
+  .book-now-button {
+    font-size: 0.9rem;
+  }
+}

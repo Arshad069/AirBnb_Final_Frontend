@@ -1,0 +1,103 @@
+/* Horizontal Scroll Container */
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: hidden;
+    padding-top: 1rem;
+    width: 88vw;
+    margin: 0 auto;
+}
+
+.scroll-wrapper {
+    display: flex;
+    background-color: white;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scrollbar-width: none; /* Disable the scrollbar */
+    gap: 1rem; /* Add gap between items */
+}
+
+/* Category Button */
+.category-button {
+    padding: 0.5rem 0;
+    width: auto;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem; /* Text size */
+    font-weight: 500;
+    color: #6B7280; /* Tailwind gray-500 */
+    transition: background-color 0.2s ease-in-out;
+    margin-right: 2rem;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.category-button:hover {
+    background-color: #F3F4F6; /* Tailwind gray-100 */
+}
+
+.category-name {
+    color: #4B5563; /* Tailwind gray-700 */
+    margin-top: 0.25rem;
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 25px;
+    margin-bottom: 0.25rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 639px) {
+    .horizontal-scroll-container {
+        width: 100vw; /* Full width for small screens */
+        padding-top: 0.5rem;
+    }
+
+    .scroll-wrapper {
+        padding: 0.75rem 0;
+        gap: 0.75rem; /* Adjust gap between items */
+    }
+
+    .category-button {
+        margin-right: 1rem; /* Reduce margin between items */
+        font-size: 0.75rem; /* Smaller text size */
+    }
+
+    .icon {
+        font-size: 20px; /* Smaller icon size */
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .horizontal-scroll-container {
+        padding-top: 1rem;
+        width: 90vw; /* Adjust width for medium screens */
+    }
+
+    .category-button {
+        font-size: 0.875rem; /* Default text size */
+        margin-right: 1.5rem; /* Moderate margin between items */
+    }
+
+    .icon {
+        font-size: 22px; /* Slightly larger icon size */
+    }
+}
+
+@media (min-width: 1024px) {
+    .horizontal-scroll-container {
+        width: 88vw; /* Slightly smaller container width for large screens */
+        padding-top: 1.5rem;
+    }
+
+    .category-button {
+        font-size: 1rem; /* Larger text size for large screens */
+        margin-right: 2rem; /* Standard margin between items */
+    }
+
+    .icon {
+        font-size: 25px; /* Default icon size */
+    }
+}

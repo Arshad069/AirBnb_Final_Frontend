@@ -9,6 +9,7 @@ import ListingDetailsPage from './Components/ListingDetailsPage';
 import BookingPage from './Components/BookingPage';
 import BookingList from './Components/BookingList';
 import HostBookings from './Components/HostBookings';
+import SearchListings from './Components/SearchListings';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<ListingsPage />} />
+        <Route path="/search-listings" element={<SearchListings />} />
         <Route path="/bookinglist" element={<BookingList />} />
         <Route path="/listing/:id" element={<ListingDetailsPage />} />
         <Route path="/signup" element={<SignUp />} />

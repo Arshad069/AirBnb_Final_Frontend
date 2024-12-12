@@ -2,3 +2,15 @@
     width: 280;
     height: 175px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+main{
+    padding-top: 60px; /* Same as navbar height */
+  }
+  
