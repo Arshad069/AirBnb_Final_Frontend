@@ -1,6 +1,6 @@
 /* General Footer Styles */
 .footer {
-    background-color: #f7fafc;
+    background-color: #050102;
     padding: 2.5rem 1rem;
     margin: 0 auto;
 }
@@ -19,7 +19,7 @@
 }
 
 .footer .footer-section h5 {
-    color: #4a5568;
+    color: white;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
@@ -77,7 +77,7 @@
 }
 
 .footer .footer-bottom .social-icons a {
-    background-color: #4a5568;
+    background-color: #d60c0c;
     color: white;
     padding: 0.2rem;
     border-radius: 0.375rem;

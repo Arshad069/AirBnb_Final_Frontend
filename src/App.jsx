@@ -10,7 +10,7 @@ import BookingPage from './Components/BookingPage';
 import BookingList from './Components/BookingList';
 import HostBookings from './Components/HostBookings';
 import SearchListings from './Components/SearchListings';
-import Footer from './Componnents/Footer';
+import Footer from './Components/Footer';
 
 function App() {
   return (

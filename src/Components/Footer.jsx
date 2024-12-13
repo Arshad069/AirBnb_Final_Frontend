@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaPinterestP, FaLinkedinIn } from 'react-icons/fa';
-import '../Styles/Footer.css'; 
+import '../Styles/Footer.css';
 
 const Footer = () => {
     return (
@@ -57,12 +57,12 @@ const Footer = () => {
                 </div>
 
                 <div className="social-icons">
-                    <a href="#!"><FaFacebookF /></a>
-                    <a href="#!"><FaTwitter /></a>
-                    <a href="#!"><FaInstagram /></a>
-                    <a href="#!"><FaPinterestP /></a>
-                    <a href="#!"><FaLinkedinIn /></a>
+                    <a href="https://www.facebook.com/profile.php?id=100069413407558" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+                    <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+                    <a href="https://www.instagram.com/arshadali2156/?hl=en" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                    <a href="https://www.linkedin.com/in/arshad-ali-93b2ba304/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
                 </div>
+
             </div>
 
         </footer>
