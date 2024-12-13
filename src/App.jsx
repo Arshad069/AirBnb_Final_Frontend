@@ -10,6 +10,7 @@ import BookingPage from './Components/BookingPage';
 import BookingList from './Components/BookingList';
 import HostBookings from './Components/HostBookings';
 import SearchListings from './Components/SearchListings';
+import Footer from './Componnents/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/hostdashboard" element={<HostDashboard />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
